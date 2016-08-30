@@ -1,0 +1,30 @@
+.home-page{
+    height: 100vh;
+    width: 100%;
+    .left-panel{
+        float: left;
+        background-color: red;
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    .main-content{
+        p{
+            margin-top: 0;
+        }
+        width: calc(100% - #{$left-panel-nav-width});
+        height: 100%;
+        background-color: purple;
+    }
+    header{
+        position: absolute;
+    }
+    .right-panel{
+        float: right;
+        background-color: green;
+        width: 50%;
+        height: 100%;
+        background-image:url('https://placekitten.com/840/1050');
+        background-size:cover;
+    }
+}
