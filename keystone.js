@@ -7,8 +7,8 @@ var keystone = require('keystone');
 var handlebars = require('express-handlebars');
 
 keystone.init({
-	'name': 'MamaChung',
-	'brand': 'MamaChung',
+	'name': 'Mama Chung',
+	'brand': 'Mama Chung',
 
 	'sass': 'public',
 	'static': 'public',
