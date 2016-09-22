@@ -14,17 +14,32 @@
         }
         width: calc(100% - #{$left-panel-nav-width});
         height: 100%;
-        background-color: purple;
+        background-color: $color-off-white;
     }
     header{
-        position: absolute;
+        //position: absolute;
+        display: block;
+        a{
+            margin-top: $header-margin;
+            text-align: center;
+            width: 100%;
+            text-decoration: none;
+            color: $color-black;
+            display: inline-block;
+            font-size: $header-font-size;
+            span{
+                color: $color-light-grey;
+                display: inline-block;
+                margin-left: 20px;
+            }
+        }
     }
     .right-panel{
         float: right;
         background-color: green;
         width: 50%;
         height: 100%;
-        background-image:url('https://placekitten.com/840/1050');
+        background-image:url('https://placekitten.com/840/1100');
         background-size:cover;
     }
 }

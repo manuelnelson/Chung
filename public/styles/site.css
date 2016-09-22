@@ -1,13 +1,40 @@
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
 
 .navigation {
   width: 100px;
   right: 0;
   height: 100vh;
   position: absolute;
-  background-color: blue;
+  background-color: #fff;
   top: 0; }
+
+.art-works {
+  font-family: "Satisfy", cursive;
+  text-align: center;
+  height: calc(100% - 70px - 15px - 5px);
+  position: relative; }
+  .art-works .art-content {
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-50%); }
+  .art-works ul {
+    list-style: none; }
+    .art-works ul:hover li {
+      color: #898989; }
+      .art-works ul:hover li:hover {
+        color: #000; }
+  .art-works li {
+    font-size: 55px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out; }
 
 .home-page {
   height: 100vh;
@@ -21,15 +48,27 @@ body {
   .home-page .main-content {
     width: calc(100% - 100px);
     height: 100%;
-    background-color: purple; }
+    background-color: #fafafa; }
     .home-page .main-content p {
       margin-top: 0; }
   .home-page header {
-    position: absolute; }
+    display: block; }
+    .home-page header a {
+      margin-top: 70px;
+      text-align: center;
+      width: 100%;
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+      font-size: 15px; }
+      .home-page header a span {
+        color: #898989;
+        display: inline-block;
+        margin-left: 20px; }
   .home-page .right-panel {
     float: right;
     background-color: green;
     width: 50%;
     height: 100%;
-    background-image: url("https://placekitten.com/840/1050");
+    background-image: url("https://placekitten.com/840/1100");
     background-size: cover; }

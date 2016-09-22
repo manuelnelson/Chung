@@ -1,0 +1,28 @@
+.art-works{
+    font-family: $font-primary-serif;
+    text-align: center;
+    height: calc(100% - #{$header-margin} - #{$header-font-size} - 5px);
+    position: relative;
+    .art-content{
+        top: 50%;
+        width: 100%;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+    ul{
+        list-style: none;
+        &:hover{
+            li{
+                color: $color-light-grey;
+                &:hover{
+                    color: $color-black;
+                }
+            }
+        }
+    }
+    li{
+        font-size: 55px;
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+    }
+}
