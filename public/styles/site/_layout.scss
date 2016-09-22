@@ -8,3 +8,10 @@ ul{
 	margin: 0;
 	padding:0;
 }
+a{
+	text-decoration: none;
+	color: $color-light-grey;
+	&:hover{
+		color: $color-black;		
+	}
+}

@@ -7,6 +7,12 @@ ul {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: #898989; }
+  a:hover {
+    color: #000; }
+
 .navigation {
   width: 100px;
   right: 0;
@@ -14,6 +20,18 @@ ul {
   position: absolute;
   background-color: #fff;
   top: 0; }
+  .navigation .nav-container {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%); }
+  .navigation ul {
+    list-style: none; }
+  .navigation li {
+    margin: 80px 10px; }
+  .navigation a {
+    display: inline-block;
+    transform: rotate(90deg); }
 
 .art-works {
   font-family: "Satisfy", cursive;
