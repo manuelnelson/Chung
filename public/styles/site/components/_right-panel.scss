@@ -1,0 +1,36 @@
+.right-panel{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-size:cover;
+    background-position: center;
+    opacity: 1;
+    transition: width 1s ease-in-out;
+    &.ng-enter{
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
+    }
+    &.ng-enter-active{
+        opacity: 1;
+    }
+    h2{
+        font-size: rem(40px);
+    }
+    &.hide-image{
+        background-size: 0;
+    }
+    .right-open &{
+        transition: width 1s ease-in-out;
+        width: calc(100% - 2 * #{$section-padding-width});
+        background-size: 0;
+        padding:$section-padding-height $section-padding-width;
+        float: none;
+    }
+    .close{
+        position: absolute;
+        right: 8vw;
+        top: 8vh;
+        font-size: rem(50px);
+        cursor: pointer;
+    }
+}

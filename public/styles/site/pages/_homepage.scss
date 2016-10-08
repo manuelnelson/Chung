@@ -9,8 +9,8 @@
 .home-page{
     height: 100vh;
     width: 100%;
-    overflow: hidden; 
-    &.open{
+    overflow: hidden;
+    &.left-open{
         overflow-x: hidden;
         .left-panel{
             transition: width 1s ease-in-out;
@@ -28,6 +28,14 @@
             //position: fixed;
         }
     }
+    &.right-open{
+        overflow-x: hidden;
+        .left-panel{
+            transition: width 1s ease-in-out;
+            width: 0%;
+            overflow: hidden;
+        }
+    }
     .left-panel{
         float: left;
         width: 50%;
@@ -42,44 +50,5 @@
         width: calc(100% - #{$left-panel-nav-width});
         height: 100%;
         background-color: $color-off-white;
-    }
-    header{
-        //position: absolute;
-        display: block;
-        a{
-            margin-top: $header-margin;
-            text-align: center;
-            width: 100%;
-            text-decoration: none;
-            color: $color-black;
-            display: inline-block;
-            font-size: $header-font-size;
-            span{
-                color: $color-light-grey;
-                display: inline-block;
-                margin-left: 20px;
-            }
-        }
-    }
-    .right-panel{
-        float: right;
-        background-color: black;
-        width: 50%;
-        height: 100%;
-        background-size:cover;
-        background-position: center;
-        opacity: 1;
-        transition: width 1s ease-in-out;
-        &.ng-enter{
-            transition: opacity 0.5s ease-in-out;
-            opacity: 0;
-            // height: 0;
-            // width: 0;
-        }
-        &.ng-enter-active{
-            opacity: 1;
-            // height: 0;
-            // width: 0;
-        }
     }
 }

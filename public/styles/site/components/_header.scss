@@ -1,0 +1,18 @@
+header{
+    //position: absolute;
+    display: block;
+    a{
+        margin-top: $header-margin;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        color: $color-black;
+        display: inline-block;
+        font-size: $header-font-size;
+        span{
+            color: $color-light-grey;
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+}
