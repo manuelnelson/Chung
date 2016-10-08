@@ -1,3 +1,4 @@
+
 .navigation{
     width: $left-panel-nav-width;
     right: 0;
@@ -6,19 +7,28 @@
     background-color: $color-white;
     top: 0;
     .nav-container{
-        position: relative;
+        position: absolute;
         display: inline-block;
         top: 50%;
         transform: translateY(-50%);
+        width: $left-panel-nav-width * 1.5;//need more width for text
     }
+    $list-width:200px;
     ul{
         list-style: none;
+        width: 200px;
     }
     li{
-        margin: 80px 10px;
+        padding: 45px 60px;
     }
     a{
         display: inline-block;
         transform: rotate(90deg);
+        transform-origin: 0 0;
+        &.active{
+            color: #000;
+            font-weight: bold;
+        }
+
     }
 }

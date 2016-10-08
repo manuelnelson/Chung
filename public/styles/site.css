@@ -24,14 +24,17 @@ a {
     position: relative;
     display: inline-block;
     top: 50%;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    width: 150px; }
   .navigation ul {
-    list-style: none; }
+    list-style: none;
+    width: 200px; }
   .navigation li {
-    margin: 80px 10px; }
+    padding: 45px 60px; }
   .navigation a {
     display: inline-block;
-    transform: rotate(90deg); }
+    transform: rotate(90deg);
+    transform-origin: 0 0; }
 
 .art-works {
   font-family: "Satisfy", cursive;

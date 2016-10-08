@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>MamaChung</title>
+		<title>Mama Chung</title>
+		<base href="/" />
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link href="/styles/site.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy" rel="stylesheet">
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
 			- only renders when user is logged in and admin--}}
@@ -20,22 +20,17 @@
 		<![endif]-->
 
 	</head>
-	<body>
+	<body ng-app="mama-chung">
 		<div id="header">
 		</div>
 		<div id="body">
 			{{{body}}}
 		</div>
 		{{!--
-			//- jQuery 1.11.3 is included by default, and required by both Bootstrap
-			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
-			//- you can upgrade to 2.1.4 (also bundled) for better performance.
-		--}}
-		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
-		{{!--
 			//- Customise which Bootstrap javascript files are served by including
 			//- them specifically here, instead of bootstrap-3.3.5.min.js
 		--}}
+		<script src="/js/app.bundle.js" charset="utf-8"></script>
 		{{{isAdminEditorJS user}}}
 	</body>
 </html>

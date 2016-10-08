@@ -1,4 +1,5 @@
 var keystone = require('keystone');
+var restful = require('restful-keystone')(keystone);
 var middleware = require('./middleware');
 var importRoutes = keystone.importer(__dirname);
 
@@ -13,8 +14,17 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function (app) {
+	restful.expose({
+    	Category : true
+  	}).expose({
+    	About : true
+  	}).expose({
+    	Contact : true
+  	}).start();
+
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/gallery', routes.views.gallery);
+	app.get('/about', routes.views.index);
+	app.get('/contact', routes.views.index);
 
 };

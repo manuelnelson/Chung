@@ -1,12 +1,39 @@
+@keyframes delayPosition {
+  from {
+    position: fixed;
+  }
+  to {
+    position: absolute;
+  }
+}
 .home-page{
     height: 100vh;
     width: 100%;
+    overflow: hidden; 
+    &.open{
+        overflow-x: hidden;
+        .left-panel{
+            transition: width 1s ease-in-out;
+            width: 100%;
+        }
+        .right-panel{
+            transition: width 1s ease-in-out;
+            width: 0%;
+        }
+        .navigation{
+            animation: 1s delayPosition;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+
+            //position: fixed;
+        }
+    }
     .left-panel{
         float: left;
-        background-color: red;
         width: 50%;
         height: 100%;
         position: relative;
+        transition: width 1s ease-in-out;
     }
     .main-content{
         p{
@@ -36,10 +63,23 @@
     }
     .right-panel{
         float: right;
-        background-color: green;
+        background-color: black;
         width: 50%;
         height: 100%;
-        background-image:url('https://placekitten.com/840/1100');
         background-size:cover;
+        background-position: center;
+        opacity: 1;
+        transition: width 1s ease-in-out;
+        &.ng-enter{
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            // height: 0;
+            // width: 0;
+        }
+        &.ng-enter-active{
+            opacity: 1;
+            // height: 0;
+            // width: 0;
+        }
     }
 }

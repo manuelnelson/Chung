@@ -1,6 +1,7 @@
 @import "variables";
 @import "colors";
 @import "fonts";
+@import "mixins";
 
 
 // Site Styles
@@ -10,4 +11,6 @@
 @import "layout";
 @import "components/navigation";
 @import "components/art-works";
+@import "components/about-section";
+@import "components/contact-section";
 @import "pages/homepage";

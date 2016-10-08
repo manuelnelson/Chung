@@ -6,9 +6,8 @@ var sass = require('gulp-sass');
 
 
 var paths = {
-	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json']
-
-,
+	'src':['./models/**/*.js','./routes/**/*.js', 'keystone.js', 'package.json'],
+	'js':['./public/js/**/*.js'],
 	'style': {
 		all: './public/styles/**/*.scss',
 		output: './public/styles/'

@@ -1,25 +1,4 @@
 {{!< default}}
-<div class="main-layout home-page">
-	<div class="left-panel">
-		<div class="main-content">
-			<header class="header">
-				<a href="http://mamachung.com/" target="_blank" class="title">Mama Chung <span>Art Gallery</span></a>
-			</header>
-			<div class="art-works">
-				<div class="art-content">
-					<ul>
-						<li>Art Item 1</li>
-						<li>Art Item 2</li>
-						<li>Art Item 3</li>
-						<li>Art Item 4</li>
-						<li>Art Item 5</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		{{> navigation}}
-	</div>
-	<div class="right-panel">
+    <div ng-view class="main-layout home-page" ng-class="{'open':open==true}">
 
-	</div>
-</div>
+    </div>
