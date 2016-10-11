@@ -17,6 +17,9 @@ module.exports = function ($rootScope, $log, $window, $scope, $http, $timeout) {
     }
     $scope.showCategory = function(category){
         $scope.selectedCategory = category;
+        $http.get('/api/galleries?categoryId=' + category._id).then(function(results){
+            $scope.selectedImages = results.data.images;
+        });
         $rootScope.rightOpen = true;
         $scope.hideImage = true;
     }

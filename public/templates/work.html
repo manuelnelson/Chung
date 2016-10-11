@@ -36,7 +36,13 @@
         <h2>{{selectedCategory.name}}</h2>
         <span class="close" ng-click="close()">X</span>
         <div ng-bind-html="selectedCategory.description">
-
         </div>
+        <div deckgrid class="deckgrid" source="selectedImages">
+            <div class="a-card">
+                <img src="" data-ng-src="{{card.images.url}}">
+            </div>
+        </div>
+
+
     </div>
 </div>

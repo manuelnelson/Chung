@@ -55,9 +55,10 @@
 	__webpack_require__(/*! angular-touch */ 10);
 	__webpack_require__(/*! angular-route */ 12);
 	__webpack_require__(/*! angular-sanitize */ 14);
-	window._ = __webpack_require__(/*! underscore */ 16);
-	__webpack_require__(/*! ./app.js */ 17);
-	__webpack_require__(/*! ./controllers */ 18);
+	__webpack_require__(/*! ../vendor/deckgrid */ 16);
+	window._ = __webpack_require__(/*! underscore */ 17);
+	__webpack_require__(/*! ./app.js */ 18);
+	__webpack_require__(/*! ./controllers */ 19);
 	// require('./directives');
 	// require('./services');
 
@@ -103,7 +104,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  margin: 0;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 15px; }\n\nul {\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #898989; }\n  a:hover {\n    color: #000; }\n\n.navigation {\n  width: 100px;\n  right: 0;\n  height: 100vh;\n  position: absolute;\n  background-color: #fff;\n  top: 0; }\n  .navigation .nav-container {\n    position: absolute;\n    display: inline-block;\n    top: 50%;\n    transform: translateY(-50%);\n    width: 150px; }\n  .navigation ul {\n    list-style: none;\n    width: 200px; }\n  .navigation li {\n    padding: 45px 60px; }\n  .navigation a {\n    display: inline-block;\n    transform: rotate(90deg);\n    transform-origin: 0 0; }\n    .navigation a.active {\n      color: #000;\n      font-weight: bold; }\n\nheader {\n  display: block; }\n  header a {\n    margin-top: 70px;\n    text-align: center;\n    width: 100%;\n    text-decoration: none;\n    color: #000;\n    display: inline-block;\n    font-size: 15px; }\n    header a span {\n      color: #898989;\n      display: inline-block;\n      margin-left: 20px; }\n\n.right-panel {\n  float: right;\n  width: 50%;\n  height: 100%;\n  background-size: cover;\n  background-position: center;\n  opacity: 1;\n  transition: width 1s ease-in-out; }\n  .right-panel.ng-enter {\n    transition: opacity 0.5s ease-in-out;\n    opacity: 0; }\n  .right-panel.ng-enter-active {\n    opacity: 1; }\n  .right-panel h2 {\n    font-size: 2.5rem; }\n  .right-panel.hide-image {\n    background-size: 0; }\n  .right-open .right-panel {\n    transition: width 1s ease-in-out;\n    width: calc(100% - 2 * 10vw);\n    background-size: 0;\n    padding: 10vh 10vw;\n    float: none; }\n  .right-panel .close {\n    position: absolute;\n    right: 8vw;\n    top: 8vh;\n    font-size: 3.125rem;\n    cursor: pointer; }\n\n.art-works {\n  font-family: \"Satisfy\", cursive;\n  text-align: center;\n  height: calc(100% - 70px - 15px - 5px);\n  position: relative; }\n  .art-works .art-content {\n    top: 50%;\n    width: 100%;\n    position: absolute;\n    transform: translateY(-50%); }\n  .art-works ul {\n    list-style: none; }\n    .art-works ul:hover li {\n      color: #898989; }\n      .art-works ul:hover li:hover {\n        color: #000; }\n  .art-works li {\n    font-size: 55px;\n    cursor: pointer;\n    transition: color 0.2s ease-in-out; }\n\n.about-section {\n  padding: 10vh 10vw;\n  text-align: center; }\n  .about-section p {\n    font-size: 3.75rem; }\n\n.contact-section {\n  padding: 10vh 10vw;\n  text-align: center; }\n  .contact-section p {\n    font-size: 3.75rem; }\n\n@keyframes delayPosition {\n  from {\n    position: fixed; }\n  to {\n    position: absolute; } }\n\n.home-page {\n  height: 100vh;\n  width: 100%;\n  overflow: hidden; }\n  .home-page.left-open {\n    overflow-x: hidden; }\n    .home-page.left-open .left-panel {\n      transition: width 1s ease-in-out;\n      width: 100%; }\n    .home-page.left-open .right-panel {\n      transition: width 1s ease-in-out;\n      width: 0%; }\n    .home-page.left-open .navigation {\n      animation: 1s delayPosition;\n      animation-delay: 1s;\n      animation-fill-mode: forwards; }\n  .home-page.right-open {\n    overflow-x: hidden; }\n    .home-page.right-open .left-panel {\n      transition: width 1s ease-in-out;\n      width: 0%;\n      overflow: hidden; }\n  .home-page .left-panel {\n    float: left;\n    width: 50%;\n    height: 100%;\n    position: relative;\n    transition: width 1s ease-in-out; }\n  .home-page .main-content {\n    width: calc(100% - 100px);\n    height: 100%;\n    background-color: #fafafa; }\n    .home-page .main-content p {\n      margin-top: 0; }\n", ""]);
+	exports.push([module.id, "body {\n  margin: 0;\n  font-family: \"Open Sans\", sans-serif;\n  font-size: 15px; }\n\nul {\n  margin: 0;\n  padding: 0; }\n\na {\n  text-decoration: none;\n  color: #898989; }\n  a:hover {\n    color: #000; }\n\n.navigation {\n  width: 100px;\n  right: 0;\n  height: 100vh;\n  position: absolute;\n  background-color: #fff;\n  top: 0; }\n  .navigation .nav-container {\n    position: absolute;\n    display: inline-block;\n    top: 50%;\n    transform: translateY(-50%);\n    width: 150px; }\n  .navigation ul {\n    list-style: none;\n    width: 200px; }\n  .navigation li {\n    padding: 45px 60px; }\n  .navigation a {\n    display: inline-block;\n    transform: rotate(90deg);\n    transform-origin: 0 0; }\n    .navigation a.active {\n      color: #000;\n      font-weight: bold; }\n\nheader {\n  display: block; }\n  header a {\n    margin-top: 70px;\n    text-align: center;\n    width: 100%;\n    text-decoration: none;\n    color: #000;\n    display: inline-block;\n    font-size: 15px; }\n    header a span {\n      color: #898989;\n      display: inline-block;\n      margin-left: 20px; }\n\n.right-panel {\n  float: right;\n  width: 50%;\n  height: 100%;\n  background-size: cover;\n  background-position: center;\n  opacity: 1;\n  transition: width 1s ease-in-out; }\n  .right-panel.ng-enter {\n    transition: opacity 0.5s ease-in-out;\n    opacity: 0; }\n  .right-panel.ng-enter-active {\n    opacity: 1; }\n  .right-panel h2 {\n    font-size: 2.5rem; }\n  .right-panel.hide-image {\n    background-size: 0; }\n  .right-open .right-panel {\n    transition: width 1s ease-in-out;\n    width: calc(100% - 2 * 10vw);\n    background-size: 0;\n    padding: 10vh 10vw;\n    float: none;\n    overflow-y: auto; }\n  .right-panel .close {\n    position: absolute;\n    right: 8vw;\n    top: 8vh;\n    font-size: 3.125rem;\n    cursor: pointer; }\n\n.art-works {\n  font-family: \"Satisfy\", cursive;\n  text-align: center;\n  height: calc(100% - 70px - 15px - 5px);\n  position: relative; }\n  .art-works .art-content {\n    top: 50%;\n    width: 100%;\n    position: absolute;\n    transform: translateY(-50%); }\n  .art-works ul {\n    list-style: none; }\n    .art-works ul:hover li {\n      color: #898989; }\n      .art-works ul:hover li:hover {\n        color: #000; }\n  .art-works li {\n    font-size: 55px;\n    cursor: pointer;\n    transition: color 0.2s ease-in-out; }\n\n.deckgrid[deckgrid]::before {\n  /* Specifies that the grid should have a maximum of 4 columns. Each column will have the classes 'column' and 'column-1-4' */\n  content: '3 .column.column-1-3';\n  font-size: 0;\n  /* See https://github.com/akoenig/angular-deckgrid/issues/14#issuecomment-35728861 */\n  visibility: hidden; }\n\n.deckgrid[deckgrid] .column {\n  float: left; }\n\n.deckgrid[deckgrid] .column-1-3 {\n  width: 33.333%; }\n\n.deckgrid[deckgrid] img {\n  width: 100%; }\n\n.about-section {\n  padding: 10vh 10vw;\n  text-align: center; }\n  .about-section p {\n    font-size: 3.125rem; }\n\n.contact-section {\n  padding: 10vh 10vw;\n  text-align: center; }\n  .contact-section p {\n    font-size: 3.125rem; }\n\n@keyframes delayPosition {\n  from {\n    position: fixed; }\n  to {\n    position: absolute; } }\n\n.home-page {\n  height: 100vh;\n  width: 100%;\n  overflow: hidden; }\n  .home-page.left-open {\n    overflow-x: hidden; }\n    .home-page.left-open .left-panel {\n      transition: width 1s ease-in-out;\n      width: 100%; }\n    .home-page.left-open .right-panel {\n      transition: width 1s ease-in-out;\n      width: 0%; }\n    .home-page.left-open .navigation {\n      animation: 1s delayPosition;\n      animation-delay: 1s;\n      animation-fill-mode: forwards; }\n  .home-page.right-open {\n    overflow-x: hidden; }\n    .home-page.right-open .left-panel {\n      transition: width 1s ease-in-out;\n      width: 0%;\n      overflow: hidden; }\n  .home-page .left-panel {\n    float: left;\n    width: 50%;\n    height: 100%;\n    position: relative;\n    transition: width 1s ease-in-out; }\n  .home-page .main-content {\n    width: calc(100% - 100px);\n    height: 100%;\n    background-color: #fafafa; }\n    .home-page .main-content p {\n      margin-top: 0; }\n", ""]);
 	
 	// exports
 
@@ -49201,6 +49202,430 @@
 
 /***/ },
 /* 16 */
+/*!**************************************!*\
+  !*** ./public/js/vendor/deckgrid.js ***!
+  \**************************************/
+/***/ function(module, exports) {
+
+	/*! angular-deckgrid (v0.5.0) - Copyright: 2013 - 2014, André König (andre.koenig@posteo.de) - MIT */
+	/*
+	 * angular-deckgrid
+	 *
+	 * Copyright(c) 2013-2014 André König <andre.koenig@posteo.de>
+	 * MIT Licensed
+	 *
+	 */
+	
+	/**
+	 * @author André König (andre.koenig@posteo.de)
+	 *
+	 */
+	
+	angular.module('akoenig.deckgrid', []);
+	
+	angular.module('akoenig.deckgrid').directive('deckgrid', [
+	
+	    'DeckgridDescriptor',
+	
+	    function initialize (DeckgridDescriptor) {
+	
+	        'use strict';
+	
+	        return DeckgridDescriptor.create();
+	    }
+	]);
+	/*
+	 * angular-deckgrid
+	 *
+	 * Copyright(c) 2013-2014 André König <andre.koenig@posteo.de>
+	 * MIT Licensed
+	 *
+	 */
+	
+	/**
+	 * @author André König (andre.koenig@posteo.de)
+	 *
+	 */
+	
+	angular.module('akoenig.deckgrid').factory('DeckgridDescriptor', [
+	
+	    'Deckgrid',
+	    '$templateCache',
+	
+	    function initialize (Deckgrid, $templateCache) {
+	
+	        'use strict';
+	
+	        /**
+	         * This is a wrapper around the AngularJS
+	         * directive description object.
+	         *
+	         */
+	        function Descriptor () {
+	            this.restrict = 'AE';
+	
+	            this.template = '<div data-ng-repeat="column in columns" class="{{layout.classList}}">' +
+	                                '<div data-ng-repeat="card in column" data-ng-include="cardTemplate"></div>' +
+	                            '</div>';
+	
+	            this.scope = {
+	                'model': '=source'
+	            };
+	
+	            //
+	            // Will be created in the linking function.
+	            //
+	            this.$$deckgrid = null;
+	
+	            this.transclude = true;
+	            this.link = this.$$link.bind(this);
+	
+	            //
+	            // Will be incremented if using inline templates.
+	            //
+	            this.$$templateKeyIndex = 0;
+	
+	        }
+	
+	        /**
+	         * @private
+	         *
+	         * Cleanup method. Will be called when the
+	         * deckgrid directive should be destroyed.
+	         *
+	         */
+	        Descriptor.prototype.$$destroy = function $$destroy () {
+	            this.$$deckgrid.destroy();
+	        };
+	
+	        /**
+	         * @private
+	         *
+	         * The deckgrid link method. Will instantiate the deckgrid.
+	         *
+	         */
+	        Descriptor.prototype.$$link = function $$link (scope, elem, attrs, nullController, transclude) {
+	            var templateKey = 'deckgrid/innerHtmlTemplate' + (++this.$$templateKeyIndex) + '.html';
+	
+	            scope.$on('$destroy', this.$$destroy.bind(this));
+	
+	            if (angular.isUndefined(attrs.cardtemplate)) {
+	                if (angular.isUndefined(attrs.cardtemplatestring)) {
+	                    // use the provided inner html as template
+	                    transclude(scope, function onTransclude (innerHTML) {
+	                        var extractedInnerHTML = [],
+	                            i = 0,
+	                            len = innerHTML.length,
+	                            outerHTML;
+	
+	                        for (i; i < len; i = i + 1) {
+	                            outerHTML = innerHTML[i].outerHTML;
+	
+	                            if (angular.isDefined(outerHTML)) {
+	                                extractedInnerHTML.push(outerHTML);
+	                            }
+	                        }
+	
+	                        $templateCache.put(templateKey, extractedInnerHTML.join());
+	                    });
+	                } else {
+	                    // use the provided template string
+	                    //
+	                    // note: the attr is accessed via the elem object, as the attrs content
+	                    // is already compiled and thus lacks the {{...}} expressions
+	                    $templateCache.put(templateKey, elem.attr('cardtemplatestring'));
+	                }
+	
+	                scope.cardTemplate = templateKey;
+	            } else {
+	                // use the provided template file
+	                scope.cardTemplate = attrs.cardtemplate;
+	            }
+	
+	            scope.mother = scope.$parent;
+	
+	            this.$$deckgrid = Deckgrid.create(scope, elem[0]);
+	        };
+	
+	        return {
+	            create : function create () {
+	                return new Descriptor();
+	            }
+	        };
+	    }
+	]);
+	
+	/*
+	 * angular-deckgrid
+	 *
+	 * Copyright(c) 2013-2014 André König <andre.koenig@posteo.de>
+	 * MIT Licensed
+	 *
+	 */
+	
+	/**
+	 * @author André König (andre.koenig@posteo.de)
+	 *
+	 */
+	
+	angular.module('akoenig.deckgrid').factory('Deckgrid', [
+	
+	    '$window',
+	    '$log',
+	
+	    function initialize ($window, $log) {
+	
+	        'use strict';
+	
+	        /**
+	         * The deckgrid directive.
+	         *
+	         */
+	        function Deckgrid (scope, element) {
+	            var self = this,
+	                watcher,
+	                mql;
+	
+	            this.$$elem = element;
+	            this.$$watchers = [];
+	
+	            this.$$scope = scope;
+	            this.$$scope.columns = [];
+	
+	            //
+	            // The layout configuration will be parsed from
+	            // the pseudo "before element." There you have to save all
+	            // the column configurations.
+	            //
+	            this.$$scope.layout = this.$$getLayout();
+	
+	            this.$$createColumns();
+	
+	            //
+	            // Register model change.
+	            //
+	            watcher = this.$$scope.$watchCollection('model', this.$$onModelChange.bind(this));
+	
+	            this.$$watchers.push(watcher);
+	
+	            //
+	            // Register media query change events.
+	            //
+	            angular.forEach(self.$$getMediaQueries(), function onIteration (rule) {
+	                var handler = self.$$onMediaQueryChange.bind(self);
+	
+	                function onDestroy () {
+	                    rule.removeListener(handler);
+	                }
+	
+	                rule.addListener(handler);
+	
+	                self.$$watchers.push(onDestroy);
+	            });
+	
+	            mql = $window.matchMedia('(orientation: portrait)');
+	            mql.addListener(self.$$onMediaQueryChange.bind(self));
+	
+	        }
+	
+	        /**
+	         * @private
+	         *
+	         * Extracts the media queries out of the stylesheets.
+	         *
+	         * This method will fetch the media queries out of the stylesheets that are
+	         * responsible for styling the angular-deckgrid.
+	         *
+	         * @return {array} An array with all respective styles.
+	         *
+	         */
+	        Deckgrid.prototype.$$getMediaQueries = function $$getMediaQueries () {
+	            var stylesheets = [],
+	                mediaQueries = [];
+	
+	            stylesheets = Array.prototype.concat.call(
+	                Array.prototype.slice.call(document.querySelectorAll('style[type=\'text/css\']')),
+	                Array.prototype.slice.call(document.querySelectorAll('link[rel=\'stylesheet\']'))
+	            );
+	
+	            function extractRules (stylesheet) {
+	                try {
+	                    return (stylesheet.sheet.cssRules || []);
+	                } catch (e) {
+	                    return [];
+	                }
+	            }
+	
+	            function hasDeckgridStyles (rule) {
+	                var regexe   = /\[(\w*-)?deckgrid\]::?before/g,
+	                    i        = 0,
+	                    selector = '';
+	
+	                if (!rule.media || angular.isUndefined(rule.cssRules)) {
+	                    return false;
+	                }
+	
+	                i = rule.cssRules.length - 1;
+	
+	                for (i; i >= 0; i = i - 1) {
+	                    selector = rule.cssRules[i].selectorText;
+	
+	                    if (angular.isDefined(selector) && selector.match(regexe)) {
+	                        return true;
+	                    }
+	                }
+	
+	                return false;
+	            }
+	
+	            angular.forEach(stylesheets, function onIteration (stylesheet) {
+	                var rules = extractRules(stylesheet);
+	
+	                angular.forEach(rules, function inRuleIteration (rule) {
+	                    if (hasDeckgridStyles(rule)) {
+	                        mediaQueries.push($window.matchMedia(rule.media.mediaText));
+	                    }
+	                });
+	            });
+	
+	            return mediaQueries;
+	        };
+	
+	        /**
+	         * @private
+	         *
+	         * Creates the column segmentation. With other words:
+	         * This method creates the internal data structure from the
+	         * passed "source" attribute. Every card within this "source"
+	         * model will be passed into this internal column structure by
+	         * reference. So if you modify the data within your controller
+	         * this directive will reflect these changes immediately.
+	         *
+	         * NOTE that calling this method will trigger a complete template "redraw".
+	         *
+	         */
+	        Deckgrid.prototype.$$createColumns = function $$createColumns () {
+	            var self = this;
+	
+	            if (!this.$$scope.layout) {
+	                return $log.error('angular-deckgrid: No CSS configuration found (see ' +
+	                                   'https://github.com/akoenig/angular-deckgrid#the-grid-configuration)');
+	            }
+	
+	            this.$$scope.columns = [];
+	
+	            angular.forEach(this.$$scope.model, function onIteration (card, index) {
+	                var column = (index % self.$$scope.layout.columns) | 0;
+	
+	                if (!self.$$scope.columns[column]) {
+	                    self.$$scope.columns[column] = [];
+	                }
+	
+	                card.$index = index;
+	                self.$$scope.columns[column].push(card);
+	            });
+	        };
+	
+	        /**
+	         * @private
+	         *
+	         * Parses the configuration out of the configured CSS styles.
+	         *
+	         * Example:
+	         *
+	         *     .deckgrid::before {
+	         *         content: '3 .column.size-1-3';
+	         *     }
+	         *
+	         * Will result in a three column grid where each column will have the
+	         * classes: "column size-1-3".
+	         *
+	         * You are responsible for defining the respective styles within your CSS.
+	         *
+	         */
+	        Deckgrid.prototype.$$getLayout = function $$getLayout () {
+	            var content = $window.getComputedStyle(this.$$elem, ':before').content,
+	                layout;
+	
+	            if (content) {
+	                content = content.replace(/'/g, '');  // before e.g. '3 .column.size-1of3'
+	                content = content.replace(/"/g, '');  // before e.g. "3 .column.size-1of3"
+	                content = content.split(' ');
+	
+	                if (2 === content.length) {
+	                    layout = {};
+	                    layout.columns = (content[0] | 0);
+	                    layout.classList = content[1].replace(/\./g, ' ').trim();
+	                }
+	            }
+	
+	            return layout;
+	        };
+	
+	        /**
+	         * @private
+	         *
+	         * Event that will be triggered if a CSS media query changed.
+	         *
+	         */
+	        Deckgrid.prototype.$$onMediaQueryChange = function $$onMediaQueryChange () {
+	            var self = this,
+	                layout = this.$$getLayout();
+	
+	            //
+	            // Okay, the layout has changed.
+	            // Creating a new column structure is not avoidable.
+	            //
+	            if (layout.columns !== this.$$scope.layout.columns) {
+	                self.$$scope.layout = layout;
+	
+	                self.$$scope.$apply(function onApply () {
+	                    self.$$createColumns();
+	                });
+	            }
+	        };
+	
+	        /**
+	         * @private
+	         *
+	         * Event that will be triggered when the source model has changed.
+	         *
+	         */
+	        Deckgrid.prototype.$$onModelChange = function $$onModelChange (newModel, oldModel) {
+	            var self = this;
+	
+	            newModel = newModel || [];
+	            oldModel = oldModel || [];
+	
+	            if (!angular.equals(oldModel, newModel)) {
+	                self.$$createColumns();
+	            }
+	        };
+	
+	        /**
+	         * Destroys the directive. Takes care of cleaning all
+	         * watchers and event handlers.
+	         *
+	         */
+	        Deckgrid.prototype.destroy = function destroy () {
+	            var i = this.$$watchers.length - 1;
+	
+	            for (i; i >= 0; i = i - 1) {
+	                this.$$watchers[i]();
+	            }
+	        };
+	
+	        return {
+	            create : function create (scope, element) {
+	                return new Deckgrid(scope, element);
+	            }
+	        };
+	    }
+	]);
+
+
+/***/ },
+/* 17 */
 /*!************************************!*\
   !*** ./~/underscore/underscore.js ***!
   \************************************/
@@ -50757,14 +51182,14 @@
 
 
 /***/ },
-/* 17 */
+/* 18 */
 /*!******************************!*\
   !*** ./public/js/app/app.js ***!
   \******************************/
 /***/ function(module, exports) {
 
 	// angular app reference must be a tier 1 name, non namespaced, for `ngmin` to work correctly
-	var app = angular.module('mama-chung', ['ngTouch','ngAnimate','ngRoute','ngSanitize']).run(function ($rootScope) {
+	var app = angular.module('mama-chung', ['ngTouch','ngAnimate','ngRoute','ngSanitize','akoenig.deckgrid']).run(function ($rootScope) {
 		$rootScope.currentLanguage = "english";
 	
 		$rootScope.goToUrl = function(url){
@@ -50790,7 +51215,7 @@
 
 
 /***/ },
-/* 18 */
+/* 19 */
 /*!********************************************!*\
   !*** ./public/js/app/controllers/index.js ***!
   \********************************************/
@@ -50800,12 +51225,12 @@
 	
 	var angular = __webpack_require__(/*! angular */ 6);
 	
-	angular.module('mama-chung').controller('HomeController', __webpack_require__(/*! ./HomeController.js */ 19)).controller('AboutController', __webpack_require__(/*! ./AboutController.js */ 20))
-	    .controller('ContactController', __webpack_require__(/*! ./ContactController.js */ 21));
+	angular.module('mama-chung').controller('HomeController', __webpack_require__(/*! ./HomeController.js */ 20)).controller('AboutController', __webpack_require__(/*! ./AboutController.js */ 21))
+	    .controller('ContactController', __webpack_require__(/*! ./ContactController.js */ 22));
 
 
 /***/ },
-/* 19 */
+/* 20 */
 /*!*****************************************************!*\
   !*** ./public/js/app/controllers/HomeController.js ***!
   \*****************************************************/
@@ -50830,6 +51255,9 @@
 	    }
 	    $scope.showCategory = function(category){
 	        $scope.selectedCategory = category;
+	        $http.get('/api/galleries?categoryId=' + category._id).then(function(results){
+	            $scope.selectedImages = results.data.images;
+	        });
 	        $rootScope.rightOpen = true;
 	        $scope.hideImage = true;
 	    }
@@ -50847,7 +51275,7 @@
 
 
 /***/ },
-/* 20 */
+/* 21 */
 /*!******************************************************!*\
   !*** ./public/js/app/controllers/AboutController.js ***!
   \******************************************************/
@@ -50872,7 +51300,7 @@
 
 
 /***/ },
-/* 21 */
+/* 22 */
 /*!********************************************************!*\
   !*** ./public/js/app/controllers/ContactController.js ***!
   \********************************************************/

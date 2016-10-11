@@ -25,6 +25,7 @@
         background-size: 0;
         padding:$section-padding-height $section-padding-width;
         float: none;
+        overflow-y: auto;
     }
     .close{
         position: absolute;
