@@ -3,6 +3,7 @@
     text-align: center;
     height: calc(100% - #{$header-margin} - #{$header-font-size} - 5px);
     position: relative;
+    overflow: hidden;
     .art-content{
         top: 50%;
         width: 100%;
